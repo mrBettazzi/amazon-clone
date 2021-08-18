@@ -2,6 +2,8 @@
 Questo progetto racoglie tutte le info che ho appreso seguendo
 [questo tutorial online sullo stack MERN](https://www.youtube.com/watch?v=RDV3Z1KCBvohttps://www.youtube.com/watch?v=7CqJlxBYj-M), pubblicato da [leverProgrammer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ) il 20 Ott 2020.
 
+18.08.2021 16:09 arrivato a 54:21 del video
+
 * [prerequisiti](#prerequisiti)
 * [backend](#app-backend)
 * [frontend](#app-frontend)
@@ -55,7 +57,7 @@ cd backend
 npm init -y
 npm install express nodemon cors mongoose dotenv
 ```
-or
+o
 ```
 yarn add express nodemon cors mongoose dotenv
 ```
@@ -68,11 +70,11 @@ PORT=4202
 ```
 * [server](#basic-server)
 * [database](#database-interface)
-* [routing](#routing)
 * [putting everything to work](#completion)
 
 ### BASIC server[^](#app-backend)
 Prepare a BASIC `server.js` file to check that everything works
+* [routing](#routing)
 ```
 const express = require ('express');
 const app = express();
@@ -307,14 +309,21 @@ localhost:4202/exercises/update/5d5d63e48695740ad00a74f2
 
 
 ## App frontend[^](#my-exercise-tracker)
-Make sure you have installed required components
+Accerta l'avventa installazione dei cmponenti necessari
 ```
-npm install bootstrap react-router-dom react-datepicker axios
+npm install bootstrap react-router-dom react-datepicker axios @material-ui/core
 ```
 oppure
 ```
-yarn add bootstrap react-router-dom react-datepicker axios
+yarn add bootstrap react-router-dom react-datepicker axios @material-ui/core
 ```
+rimuovi
+```
+App.test.js
+setupTests.js
+logo.svg
+```
+
 
 * [index.html](#index-html)
 * [index.js](#index-js)
